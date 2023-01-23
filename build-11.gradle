@@ -84,7 +84,12 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-validation'){
         exclude group: 'ch.qos.logback', module: 'logback-core'
     }
-    compile("com.github.checkmarx-ltd:cx-spring-boot-sdk:${CxSBSDK}") {
+    //compile("com.github.checkmarx-ltd:cx-spring-boot-sdk:${CxSBSDK}") {
+    //    exclude group: 'org.apache.ant', module: 'ant'
+    //    exclude group: 'ch.qos.logback', module: 'logback-core'
+    //    exclude group: 'org.bouncycastle', module:'bcprov-jdk15on'
+    //}
+    compile("com.github.lgv:lgv-cx-spring-boot-sdk:0.5.33.LG.1") {
         exclude group: 'org.apache.ant', module: 'ant'
         exclude group: 'ch.qos.logback', module: 'logback-core'
         exclude group: 'org.bouncycastle', module:'bcprov-jdk15on'
